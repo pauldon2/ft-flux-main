@@ -8,10 +8,10 @@ module "github_repository" {
 }
 
 module "gke_cluster" {
-  source         = "github.com/den-vasyliev/tf-google-gke-cluster"
+  source         = "github.com/pauldon2/ft-gke-flux-cluster"
   GOOGLE_REGION  = var.GOOGLE_REGION
   GOOGLE_PROJECT = var.GOOGLE_PROJECT
-  GKE_NUM_NODES  = 1
+  GKE_NUM_NODES  = 2
 }
 
 module "flux_bootstrap" {
